@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IoT Demo App</title>
+  <link rel="stylesheet" href="css/material.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/highlight.css">
+  <link rel="stylesheet" href="css/bootstrap-switch.css">
+  <script src="js/browserMqtt.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-switch.js"></script>
+  <script src="js/material.js"></script>
+  <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+  <div class="intro-header">
+    <svg width="60" height="60">
+      <circle cx="30" cy="30" r="18" stroke="#888" stroke-width="4" fill="#ff3333" id="statusOO"/>
+    </svg>
+    <span id="statusValue" style="position: relative; top: 3px; color:#999; font-size: 18px; font-weight: bold">OFFLINE</span>
+    <img src="img/logo.png">
+  </div>
+  <div class="domainName mdl-shadow--2dp">Environment Monitoring</div>
+  <ul>
+    <li>
+      <div class="widget-container gradient-1 mdl-shadow--4dp">
+        <p>temperature</p>
+        <div class="value-container">
+          <div class="icon-holder">
+            <img src="img/tmp.png">
+          </div>
+          <div class="value-holder">
+            <p id="tempValue">20</p>
+            <div class="timestamp">
+              <div class="timestamp-holder">
+                <span class="day" id="tempday"></span>
+                <span class="hour" id="temphour"></span>
+                <span class="min" id="tempmin"></span>
+                <span class="sec" id="tempsec"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="widget-container gradient-3 mdl-shadow--4dp">
+        <p>humidity</p>
+        <div class="value-container">
+          <div class="icon-holder">
+            <img src="img/hum.png">
+          </div>
+          <div class="value-holder">
+            <p id="humdValue">20</p>
+            <div class="timestamp">
+              <div class="timestamp-holder">
+                <span class="day" id="humdday"></span>
+                <span class="hour" id="humdhour"></span>
+                <span class="min" id="humdmin"></span>
+                <span class="sec" id="humdsec"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="widget-container gradient-5 mdl-shadow--2dp">
+        <p>switch</p>
+        <div class="switch">
+          <input type="checkbox" data-size="large" data-handle-width="75" data-on-color="warning" name="actuator-switch" data-off-color="warning" id="switch-onoff"></input>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <script src="js/mqtt.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@font-face{
+    font-family: RobotoLight;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+ul{
+  position: relative;
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+li{
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.wgt-ctnr{
+  position: relative;
+  width: 225px;
+  height: 225px;
+  background-color: #009cde;
+}
+.wgt-ctnr > h3{
+  position: relative;
+  top: 10px;
+  margin: 10px 0px 10px 0px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+}
+.value > h1{
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  font-size: 70px;
+  color: #fff;
+}
+.center{
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.tm-hldr{
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+  width: 100%;
+}
+.timestamp > span{
+  font-family: RobotoLight, sans-serif;
+  color: #fff;
+}
+.dm, .dh, .ds{
+  font-size: 20px;
+}
+.dh{
+  margin-left: 10px;
+}
+.dm{
+  font-weight: bold;
+}
+.sw-hldr{
+  position: relative;
+  top: 25%;
+}
+.green{
+   background-color: #00b680;
+}
+svg{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 501px){
+  li{
+    display: block;
+    padding: 5px 15px 10px 15px;
+  }
+  .wgt-ctnr{
+    width: 100%;
+    height: 220px;
+  }
+}

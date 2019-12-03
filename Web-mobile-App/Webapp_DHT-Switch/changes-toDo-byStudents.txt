@@ -1,0 +1,2 @@
+1. Open index.html and change Mqtt topics.
+2. In folder "js" open "app.js" and change Mqtt topics.
